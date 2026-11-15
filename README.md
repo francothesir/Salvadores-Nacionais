@@ -101,3 +101,12 @@ Ideias e problemas também podem ser enviados pela aba **Issues**.
 ### Franco — integração do fork francothesir
 
 44 tiras próprias e 18 efeitos separados, incluindo especiais turbinados, flashes, tinta e Obra-Prima. A mesma integração acrescenta sete efeitos do Dney e o laser dos olhos. [Registro da contribuição](production/qa/FRANCO-DNEY.md). As contribuições de Majis e Chapuh foram preservadas.
+
+### Trunks — seis frames de 500px por animação
+
+40 animações próprias e 8 camadas auxiliares, cada uma em imagem separada com
+seis frames de 500×500px e alpha real: **288 frames**. PNGs em pranchas de
+1500×1000 e tiras de 3000×500, com proporções calibradas pela referência do
+personagem. Inclui todos os estados, golpes, supers, cães e ambulância.
+[Prévia em 500px](production/qa/trunks-sprites.html) e
+[fontes e instruções](production/sprites/source/trunks-v3/README.md).

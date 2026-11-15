@@ -110,3 +110,14 @@ seis frames de 500×500px e alpha real: **288 frames**. PNGs em pranchas de
 personagem. Inclui todos os estados, golpes, supers, cães e ambulância.
 [Prévia em 500px](production/qa/trunks-sprites.html) e
 [fontes e instruções](production/sprites/source/trunks-v3/README.md).
+
+### Belga — seis frames de 500px por animação
+
+Rosto, porte, boné, tatuagens, colete bege e calça estampada baseados nas
+referências fotográficas. **40 animações e 8 efeitos, 288 frames** com alpha
+real, proporções calibradas e uma animação por PNG de 1500×1000. Tiras do jogo
+em 3000×500. O Um-Dois acompanha os dois contatos; os supers acompanham os três
+e sete lançamentos reais de vinil. As regras de combate e o BPM são preservados.
+[Prévia em 500px](production/qa/belga-sprites.html),
+[prévia independente para baixar](production/qa/belga-previa-500px.html) e
+[fontes e instruções](LEIA-ME-BELGA.md).

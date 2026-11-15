@@ -45,6 +45,24 @@ export function spriteProgress(f, animation) {
 function sixFrameProgress(f, animation) {
   if (f.state === 'attack' && f.move) {
     const m = f.move;
+    const contacts = f.ch.spriteHitFrames?.[f.moveKey];
+    if (contacts && m.hits.length === contacts.length) {
+      const first = m.hits[0].from;
+      if (f.sf < first) return Math.min(1.999, f.sf / Math.max(1, first) * 2) / 6;
+      for (let i = 0; i < m.hits.length; i++) {
+        if (f.sf <= m.hits[i].to) return contacts[i] / 6;
+        if (i + 1 < m.hits.length && f.sf < m.hits[i + 1].from) return (contacts[i] + 1) / 6;
+      }
+      return 5 / 6;
+    }
+    const releases = f.ch.spriteSpawnFrames?.[f.moveKey];
+    if (releases && m.spawn.length) {
+      const shots = [...m.spawn].sort((a, b) => a.at - b.at);
+      if (f.sf < shots[0].at) return Math.min(1.999, f.sf / Math.max(1, shots[0].at) * 2) / 6;
+      if (f.sf > shots.at(-1).at + 3) return 5 / 6;
+      const index = shots.findLastIndex(s => s.at <= f.sf);
+      return releases[index % releases.length] / 6;
+    }
     const first = m.hits[0]?.from ?? (m.spawn.length ? Math.min(...m.spawn.map(s => s.at)) : m.startup + 1);
     const last = m.hits.at(-1)?.to ?? (m.spawn.length ? Math.max(...m.spawn.map(s => s.at)) : m.startup + m.active);
     if (f.sf < first) return Math.min(.499, f.sf / Math.max(1, first) * .5);

@@ -4,6 +4,7 @@ import { drawSpriteEffect, hasSpriteStrip, drawEffect } from './sprites.js';
 import { drawChapuhEntity } from './chapuh-art.js';
 import { drawMajisEntity } from './majis-art.js';
 import { drawTrunksEntity, drawTrunksParticle } from './trunks-art.js';
+import { drawBelgaEntity, drawBelgaParticle } from './belga-art.js';
 
 /**
  * Efeitos visuais. Lê os eventos que a simulação emite a cada quadro e cria
@@ -33,6 +34,10 @@ export function fxEvents(fx, st) {
       if (name && hasSpriteStrip(actor.ch.id, name)) fx.parts.push({ k: 'sprite', id: actor.ch.id, name, x: e.x, y: name === 'fx-poeira' ? GY - 35 : e.t === 'pop' ? GY - 350 : sy, r: name === 'fx-poeira' ? 320 : 240, t: 0, dur: 20 });
     }
     const layer = (id, name, x, y, w, h = w, dur = 16, face = 1) => fx.parts.push({ k: 'sprite', id, name, x, y, w, h, dur, face, t: 0 });
+    if (e.t === 'hit' && actor?.ch.id === 'belga') {
+      if (['5S', 'SA1', 'SA3'].includes(e.key)) layer('belga-fx', 'vinil-impacto', e.x, sy, 240, 240, 16, actor.face);
+      else if (actor.res.bpm > 0) layer('belga-fx', 'fx-bpm', actor.x, GY - actor.y - 270, 260, 260, 18, actor.face);
+    }
     if (e.t === 'hit' && actor?.ch.id === 'trunks' && e.key === 'SA3') {
       layer('trunks-fx', 'caes-mordida', e.x, sy, 200, 150, 12, actor.face);
     }
@@ -166,7 +171,7 @@ export function drawEntities(c, st) {
     c.save();
     c.lineWidth = 5;
     c.strokeStyle = '#12080c';
-    if (drawChapuhEntity(c, e) || drawMajisEntity(c, e) || drawTrunksEntity(c, e, owner?.ch.id)) { c.restore(); continue; }
+    if (drawChapuhEntity(c, e) || drawMajisEntity(c, e) || drawTrunksEntity(c, e, owner?.ch.id) || drawBelgaEntity(c, e, owner?.ch.id)) { c.restore(); continue; }
     if (e.kind === 'ambulance') {
       // ambulância despencando do céu até o chão, girando, com a sirene piscando
       const t = e.delay > 0 ? 1 - e.delay / (e.delay0 || 26) : 1;
@@ -329,6 +334,10 @@ export function fxDrawFront(c, fx) {
   for (const p of fx.parts) {
     const t = p.t / p.dur;
     if (p.k === 'absorb') continue;
+    if (p.k === 'sprite' && p.id === 'belga-fx') {
+      drawBelgaParticle(c, p);
+      continue;
+    }
     if (p.k === 'sprite' && p.id === 'trunks-fx') {
       drawTrunksParticle(c, p);
       continue;

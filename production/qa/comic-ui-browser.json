@@ -27,8 +27,8 @@
   ],
   "soundButtonBelowHud": true,
   "performance": {
-    "medianMs": 11.299999999813735,
-    "p95Ms": 14.299999999813735
+    "medianMs": 11.700000000186265,
+    "p95Ms": 14.800000000745058
   },
   "mobileOverflow": false,
   "galleryOverflow": false,

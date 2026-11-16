@@ -28,9 +28,11 @@ originais fornecidas pelo usuário **não são incluídas no repositório**.
 
 O retrato de Ryuchi foi refeito em vista frontal usando exclusivamente as
 três referências fotográficas mais recentes, sem aproveitar a fisionomia das
-versões ilustradas rejeitadas. A revisão mantém pele clara de subtom neutro,
-sobrancelhas sem corte, olhos naturais, bigode fino e touca justa com estampa
-branca. O mesmo retrato gera o ícone e aparece nas telas do jogo.
+versões ilustradas rejeitadas. Conforme o ajuste seguinte do usuário, a pele
+foi levemente escurecida em direção ao tom de Franco, as bochechas ficaram
+levemente mais finas e o lábio inferior foi discretamente reduzido. A revisão
+mantém sobrancelhas sem corte, olhos naturais, bigode fino e touca justa com
+estampa branca. O mesmo retrato gera o ícone e aparece nas telas do jogo.
 
 O retrato de Chapuh usa como referência seu sprite já existente. O MOV
 fornecido ultrapassou o limite de transferência de 32 MiB e não pôde ser

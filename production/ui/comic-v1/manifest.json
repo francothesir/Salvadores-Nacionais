@@ -88,16 +88,16 @@
       "width": 768,
       "height": 1024,
       "alpha": true,
-      "sha256": "f6a4dd777affe75495c96d686640b983c23501e7e464e96a52b225876688f7a6",
-      "bytes": 296568
+      "sha256": "47d561306406d5ba300c4d2199e292975770d9d090446eca356e4490d3d2abbe",
+      "bytes": 264734
     },
     "icon-ryuchi": {
       "path": "icons/ryuchi.webp",
       "width": 256,
       "height": 256,
       "alpha": true,
-      "sha256": "cfeb17a97a0a3731a666283e76a4141fadc6a9ab723f072a459d36826285385c",
-      "bytes": 22558
+      "sha256": "b92084382433d49e31b333d349cbc7e2d73703ef3eb92a763b505e33e7bf33fa",
+      "bytes": 20280
     },
     "portrait-mdep": {
       "path": "portraits/mdep.webp",

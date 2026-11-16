@@ -34,10 +34,11 @@ levemente mais finas e o lábio inferior foi discretamente reduzido. A revisão
 mantém sobrancelhas sem corte, olhos naturais, bigode fino e touca justa com
 estampa branca. O mesmo retrato gera o ícone e aparece nas telas do jogo.
 
-O retrato de Chapuh usa como referência seu sprite já existente. O MOV
-fornecido ultrapassou o limite de transferência de 32 MiB e não pôde ser
-inspecionado; sua semelhança com esse vídeo ainda precisa de uma imagem de
-referência acessível. Não foi tratado como um vídeo já conferido.
+O retrato de Chapuh foi refeito com as duas fotos de frente e de lado enviadas
+depois: cachos pretos soltos e volumosos, olhos, formato do nariz, bigode fino,
+pequeno tufo no queixo e brinco de cruz dourado. O cabelo fica visível, sem boné
+no retrato; a jaqueta marrom com detalhes creme e amarelo mantém o figurino do
+jogo. O mesmo desenho é usado nos menus e no ícone do HUD.
 
 ## Escala e finalização dos lutadores
 

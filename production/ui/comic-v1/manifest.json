@@ -120,16 +120,16 @@
       "width": 768,
       "height": 1024,
       "alpha": true,
-      "sha256": "115787c7ae1d7b4bd12e45db45014fb142af5ed75691ba0de7c81449412f0ae2",
-      "bytes": 279732
+      "sha256": "1906cae7ff2ceaf9e04cfa696ede005655ae3c4e902aba75c7545157cd16dbcd",
+      "bytes": 357074
     },
     "icon-chapuh": {
       "path": "icons/chapuh.webp",
       "width": 256,
       "height": 256,
       "alpha": true,
-      "sha256": "642172fe4a3d69511e9f5eb08780c04049dadb4ce3293553f44bce32e80a6d88",
-      "bytes": 25808
+      "sha256": "00e18d0e7c91d1056c853d608be41014310b59b50e1c219a52566853803c244b",
+      "bytes": 33762
     },
     "portrait-dney": {
       "path": "portraits/dney.webp",

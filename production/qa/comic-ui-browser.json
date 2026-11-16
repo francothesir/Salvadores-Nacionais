@@ -15,7 +15,7 @@
   "keyboardFlow": {
     "screen": "fight",
     "mode": "training",
-    "character": "ryuchi",
+    "character": "chapuh",
     "paused": false
   },
   "selectionAnimated": true,
@@ -27,8 +27,8 @@
   ],
   "soundButtonBelowHud": true,
   "performance": {
-    "medianMs": 11.700000000186265,
-    "p95Ms": 14.800000000745058
+    "medianMs": 8.799999999813735,
+    "p95Ms": 12.199999999254942
   },
   "mobileOverflow": false,
   "galleryOverflow": false,
